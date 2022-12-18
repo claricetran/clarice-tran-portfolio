@@ -1,0 +1,26 @@
+/* Pastel vaporwave hex codes
+    Green: #cbffe6
+    blue: #afe9ff
+    purple: #bfb9ff
+    pink: #ffcfea
+    yellow: #feffbe
+*/
+* {
+    background-color: gray;
+    color: white;
+}
+/* Avatar/picture of Clarice will be ____ with a pastel pink glow */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 20vh;
+    padding: 10vh;
+}
+
+header img {
+    border: solid 0.2vh white;
+    border-radius: 7vh 5vh;
+    box-shadow: 0 0 5px 10px #ffcfea;
+    max-width: 15vh;
+}
