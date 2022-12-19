@@ -5,22 +5,147 @@
     pink: #ffcfea
     yellow: #feffbe
 */
-* {
-    background-color: gray;
-    color: white;
-}
-/* Avatar/picture of Clarice will be ____ with a pastel pink glow */
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 20vh;
-    padding: 10vh;
+:root {
+    --vw-pink:#ffcfea;
+    --vw-blue: #afe9ff;
+    --vw-purple: #bfb9ff;
+    --vw-yellow: #feffbe;
+    --vw-green: #cbffe6;
 }
 
+* {
+    color: white;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+html {
+    height: 100%;
+}
+
+/* light purple background with darker purple grid over it. Grid is done with linear gradient */
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #bfb9ff; 
+    background-image: linear-gradient(#846ab3 0.05em, transparent 0.05em), linear-gradient(90deg, #846ab3 .05em, transparent .05em);
+    background-size: 2em 2em;
+  }
+
+header {
+    min-height: 20vh;
+    padding: 2.5vh;
+    text-align: center;
+    background-image: linear-gradient( #bfb9ff, #ffcfea);
+}
+
+header * {
+    padding: 0.45em;
+}
+
+/* Avatar/picture of Clarice will have white border with a pastel pink glow and offset pastel yellow glow.*/
 header img {
+    padding: 0;
     border: solid 0.2vh white;
-    border-radius: 7vh 5vh;
-    box-shadow: 0 0 5px 10px #ffcfea;
-    max-width: 15vh;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 7px #ffcfea, 10px 5px 5px 5px #feffbe;
+    min-width: 6em;
+    min-height: 6em;
+    max-width: 11.5em;
+}
+
+h1 {
+    font-size: 72px;
+    text-shadow: 1px 0px 1px darkgray, 5px 0px 5px #feffbe;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+li {
+    margin: 0 10vh;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    border-right: 10px dashed #cbffe6;
+    min-width: 30vh;
+    width: 400px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+header a, h2 {
+    color: #feffbe;
+    font-size: 60px;
+}
+
+section, footer {
+    display: inline-flex;
+    margin: 30px;
+}
+
+#portfolio-work {
+    flex-flow: column wrap;
+}
+
+#about p {
+    line-height: 2;
+    padding: 3vh;
+}
+
+#about p, figure {
+    border: 10px solid #afe9ff;
+    border-radius: 20px;
+    min-width: 50vh;
+    max-width: min-content;
+    margin: 30px;
+}
+
+figure {
+    position: relative;
+    width: fit-content;
+    margin: 5px;
+}
+
+a img {
+    width: 50vh;
+    height: 400px;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-radius: 10px;
+}
+
+#first-work img{
+    width: 100vh;
+    border-radius: 10px;
+}
+
+figcaption {
+    background-color: #afe9ff;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+    height:fit-content;
+    width: f;
+}
+
+figcaption * {
+    padding: 5px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+footer {
+    align-items: center;
 }
