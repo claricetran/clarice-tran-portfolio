@@ -1,90 +1,86 @@
 /* Pastel vaporwave hex codes set to variables to be easier to type/reuse. */
 :root {
-  --vw-pink: #ffcfea;
-  --vw-blue: #afe9ff;
-  --vw-purple: #bfb9ff;
-  --vw-yellow: #feffbe;
-  --vw-green: #cbffe6;
-  --vw-dark-purple: #846ab3;
+	--vw-pink: #ffcfea;
+	--vw-blue: #afe9ff;
+	--vw-purple: #bfb9ff;
+	--vw-yellow: #feffbe;
+	--vw-green: #cbffe6;
+	--vw-dark-purple: #846ab3;
 }
 
 /* Font will be white and in the sans-serif family */
 * {
-  color: white;
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Light purple background with darker purple grid over it. 
 Grid is done with linear gradient with dark purple and transparent as the colors. 
 Being at 0 deg and 90 deg changes the line directions.*/
 body {
-  width: 100vw;
-  background-color: var(--vw-purple);
-  background-image: linear-gradient(
-      var(--vw-dark-purple) 0.05em,
-      transparent 0.05em
-    ),
-    linear-gradient(90deg, var(--vw-dark-purple) 0.05em, transparent 0.05em);
-  background-size: 2em 2em;
+	width: 100vw;
+	background-color: var(--vw-purple);
+	background-image: linear-gradient(var(--vw-dark-purple) 0.05em, transparent 0.05em),
+		linear-gradient(90deg, var(--vw-dark-purple) 0.05em, transparent 0.05em);
+	background-size: 2em 2em;
 }
 
 /* All items in the header are centered and the header has a gradient from purple to pink.*/
 header {
-  background-image: linear-gradient(var(--vw-purple), var(--vw-pink));
-  background-size: cover;
+	background-image: linear-gradient(var(--vw-purple), var(--vw-pink));
+	background-size: cover;
 }
 
 /* Both the header section and figure captions are to have a height which fits their contents
 and a padding of 20px for spacing. */
 header,
 figcaption {
-  height: fit-content;
-  padding: 20px;
+	height: fit-content;
+	padding: 20px;
 }
 
 /* All children elements in the header will have a padding of 10px. */
 header * {
-  padding: 10px;
+	padding: 10px;
 }
 
 /* Avatar/picture of Clarice will be a circle with a small, white border, pastel pink glow and offset pastel yellow glow.*/
 header img {
-  padding: 0;
-  border: solid 1px white;
-  border-radius: 50%;
-  box-shadow: 0 0 10px 7px var(--vw-pink-pink),
-    10px 5px 5px 5px var(--vw-yellow);
-  min-width: 6em;
-  min-height: 6em;
-  max-width: 11.5em;
+	padding: 0;
+	border: solid 1px white;
+	border-radius: 50%;
+	box-shadow: 0 0 10px 7px var(--vw-pink-pink), 10px 5px 5px 5px var(--vw-yellow);
+	min-width: 6em;
+	min-height: 6em;
+	max-width: 11.5em;
 }
 
 /* h1 has the largest font size and two text-shadows (gray and pastel yellow) */
 h1 {
-  font-size: 60px;
-  text-shadow: 1px 0px 1px darkgray, 5px 0px 5px var(--vw-yellow);
+	font-size: 60px;
+	text-shadow: 1px 0px 1px darkgray, 5px 0px 5px var(--vw-yellow);
 }
 
 /* unordered lists will have no list style type*/
 ul {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 /* list items in nav and contact section will be bold */
 li {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 /* Links will have no text decoration */
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 /* The links in the header and their respective sections will have the same font size and color. */
 header a,
 h2 {
-  color: var(--vw-yellow);
-  font-size: 40px;
+	color: var(--vw-yellow);
+	font-size: 40px;
 }
 
 /* The header section, about me section, 2nd headings, footer, and figures will have their elements align in the center.*/
@@ -93,157 +89,157 @@ h2,
 section,
 footer,
 figure {
-  text-align: center;
+	text-align: center;
 }
 
 /* The 2nd headings, sections, and footer will have a top and bottom margin of 5vh and should be center from the left and right. */
 h2,
 section,
 footer {
-  margin: 5vh auto;
+	margin: 5vh auto;
 }
 
 /* The sections and footer will act as blocks and should be centered with 30px on their top and bottom margins */
 section,
 footer {
-  display: block;
-  margin: 30px auto;
+	display: block;
+	margin: 30px auto;
 }
 
 /* The portfolio projects section and about section will have the same width of 60vw. */
 #portfolio-work,
 #about p {
-  width: 60vw;
+	width: 60vw;
 }
 
 /* The about section will have a line height of 2 and padding of 20px. */
 #about p {
-  line-height: 2;
-  padding: 3vh;
+	line-height: 2;
+	padding: 3vh;
 }
 
 /* The about me paragraph and portfolio projects will all have pastel blue, curved borders. */
 #about p,
 figure {
-  border: 10px solid var(--vw-blue);
-  border-radius: 20px;
+	border: 10px solid var(--vw-blue);
+	border-radius: 20px;
 }
 
 /* The projects will have a relative position and have a bottom margin of 30px. */
 figure {
-  position: relative;
-  margin-bottom: 30px;
+	position: relative;
+	margin-bottom: 30px;
 }
 
 /* The screenshots of the portfolios will all have the same width and height (57.75vw x 20vh) which should adjust to fit the size.
 The screenshot should always show from the top center of the image. The image will have a curved border to be close to border of its parent element.
 The screenshots are all blurred.*/
 a img {
-  height: 20vh;
-  width: 57.75vw;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 10px;
-  filter: blur(2px);
+	height: 20vh;
+	width: 57.75vw;
+	object-fit: cover;
+	object-position: top center;
+	border-radius: 10px;
+	filter: blur(2px);
 }
 
 /* Only the first screenshot of the portfolio projects will have a height of 40vh. */
 #first-work img {
-  height: 40vh;
+	height: 40vh;
 }
 
 /* The title of the project will have the same background as the border. It will be positioned in the bottom left of the image link. */
 figcaption {
-  background-color: var(--vw-blue);
-  position: absolute;
-  bottom: 10px;
-  left: -5px;
-  border-radius: 0px 10px 10px 0px;
+	background-color: var(--vw-blue);
+	position: absolute;
+	bottom: 10px;
+	left: -5px;
+	border-radius: 0px 10px 10px 0px;
 }
 
 /* The h3 and p in the figcaption will have paddings of 5px. */
 figcaption * {
-  padding: 5px;
+	padding: 5px;
 }
 
 /* h3 will have a font size of 20px */
 h3 {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 /*footer will have a bottom padding of 30px*/
 footer {
-  padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 /* only list items in the footer will have margins of 50px.*/
 footer li {
-  margin: 50px;
+	margin: 50px;
 }
 
 /* When a portfolio link is hovered over, it will removve the blur. */
 a img:hover {
-  filter: blur(0px);
+	filter: blur(0px);
 }
 
 /* When a list item (so in the header and footer) link is hovered it will have a dark gray and green text shadow. */
 li a:hover {
-  text-shadow: 1px 0px 1px darkgray, 0 1px 5px var(--vw-green);
+	text-shadow: 1px 0px 1px darkgray, 0 1px 5px var(--vw-green);
 }
 
 /* Tags with the margin class will have auto margins for centering.*/
 .margins {
-  margin: 30px auto;
+	margin: 30px auto;
 }
 
 /* When the minimum width of 1280px is met, the code below will apply. */
 @media screen and (min-width: 1280px) {
-  /* H2 will have a size of 20vw, be aligned to its right and have a pastel green, double border.
+	/* H2 will have a size of 20vw, be aligned to its right and have a pastel green, double border.
   It will also clear of any margin settings and have a padding of 30px on the right. */
-  h2 {
-    border-right: 10px double var(--vw-green);
-    width: 20vw;
-    text-align: right;
-    padding-right: 30px;
-    margin: 0;
-  }
+	h2 {
+		border-right: 10px double var(--vw-green);
+		width: 20vw;
+		text-align: right;
+		padding-right: 30px;
+		margin: 0;
+	}
 
-  /* Sections and the footer will be displayed as flex and will have a margin of 30px. */
-  section,
-  footer {
-    display: flex;
-    margin: 30px;
-  }
+	/* Sections and the footer will be displayed as flex and will have a margin of 30px. */
+	section,
+	footer {
+		display: flex;
+		margin: 30px;
+	}
 
-  /* All image links will have a width of 28vw. */
-  a img {
-    width: 28vw;
-  }
+	/* All image links will have a width of 28vw. */
+	a img {
+		width: 28vw;
+	}
 
-  /* Portfolio projects section will have a width of 70vw and the elements inside will be spaced around. */
-  #portfolio-work {
-    width: 70vw;
-    justify-content: space-around;
-  }
+	/* Portfolio projects section will have a width of 70vw and the elements inside will be spaced around. */
+	#portfolio-work {
+		width: 70vw;
+		justify-content: space-around;
+	}
 
-  /* The first image in the portfolio willl have a width of 62vw . */
-  #first-work img {
-    width: 62vw;
-  }
+	/* The first image in the portfolio willl have a width of 62vw . */
+	#first-work img {
+		width: 62vw;
+	}
 }
 
 /* When the minimum width of 700px is met, the code below will apply. */
 @media screen and (min-width: 700px) {
-  /* Unordered lists will have no margins. Be displayed as flex and be spaced evenly. */
-  ul {
-    margin: 0;
-    display: flex;
-    justify-content: space-evenly;
-  }
+	/* Unordered lists will have no margins. Be displayed as flex and be spaced evenly. */
+	ul {
+		margin: 0;
+		display: flex;
+		justify-content: space-evenly;
+	}
 
-  /* Elements in ul and the portfolio project section will flex in rows and wrap. */
-  ul,
-  #portfolio-work {
-    flex-flow: row wrap;
-  }
+	/* Elements in ul and the portfolio project section will flex in rows and wrap. */
+	ul,
+	#portfolio-work {
+		flex-flow: row wrap;
+	}
 }
